@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Barra de navegación */
+
+
+nav {
+    /* Contenedor nav posicion */
+    position: fixed;
+    background-color: white;
+    display: flex;
+    height: 80px;
+    width: 100%;
+    padding: 4px 16px;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    /* border: 2px solid black; */
+
+}
+
+.navbar {
+    /* Contenedor general */
+
+    position: fixed;
+    width: 100%;
+    height: 48px;
+    font-size: 15px;
+    font-weight: 550;
+    /* z-index: 2; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* border: 1px solid black; */
+
+}
+
+.navbar img {
+    /* Afecta a todas las imagenes dentro de la barra de busqueda, se estableció un tamaño definido */
+    height: 30px;
+}
+
+.left-side {
+    /* Acomodo de los elementos izquierda */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.left-side .link-logo{
+    padding: 0;
+}
+.logo {
+    /* Margen del logo **Sin margen arriba y abajo, y 5px a los lados */
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.left-side a {
+    /* Estilos y posiciones de las etiquetas a */
+    text-decoration: none;
+    color: black;
+    height: 100%;
+    padding: 0 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* cursor: pointer; */
+}
+
+.media-inicio{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.media-inicio .inicio {
+    height: 100%;
+    background-color: black;
+    color: white;
+    border-radius: 35px;
+
+}
+
+.img-media{
+    display: none;
+    background-color: white;
+}
+
+.links{
+    display: flex;
+    height: 100%;
+}
+
+
+.finder {
+    /* Contenedor input e img */
+    height: 100%;
+    width: 80%;
+    position: relative;
+
+}
+
+#search-input {
+    /* Estilos del buscador input */
+    padding: 0 10px 0 10px;
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 25px;
+    border: 1px solid transparent;
+    background-color: #E9E9E9;
+    color: rgb(51, 51, 51);
+    text-align: left;
+    outline: none;
+    /* border: 1px solid black; */
+}
+
+.finder .btn {
+    position: absolute;
+    top: 15px;
+    left: 12px;
+
+}
+
+::placeholder {
+    position: absolute;
+    left: 30px;
+}
+
+.right-side {
+    /* Acomodo de los elementos dereecha */
+    height: 100%;
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 25px;
+    /* border: 1px solid black; */
+}
+
+.right-side img {
+    cursor: pointer;
+}
+
+.usuario {
+    border-radius: 50%;
+}
+
+
+/* Sección de imagenes */
+
+.cards {
+    /* Contenedor de TODAS las imagenes */
+    position: relative;
+    top: 80px;
+    columns:236px;
+    margin: 0 auto;
+    padding: 0 1vw;
+    /* z-index: 0; */
+
+}
+
+.card {
+    /* Contenedor de imagen */
+    width: 236px;
+    height: auto;
+    margin-bottom: 15px;
+    position: relative;
+    /* display: block; */
+    display: flex;
+    overflow: hidden;
+}
+
+.card img {
+    /* Tamaño de las imagenes */
+    width: 100%;
+    border-radius: 15px;
+}
+
+.options {
+    /* Estilo de efcto hover */
+    position: absolute;
+    top: 0;
+    background-color: #00000080;
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+    cursor: zoom-in;
+    opacity: 0;
+    transition: .1ms;
+    /* border: 1px solid red; */
+}
+
+.card:hover .options {
+    opacity: 1;
+}
+
+.save {
+    position: absolute;
+    top: 17px;
+    right: 17px;
+    background-color: #E60023;
+    color: white;
+    border: none;
+    height: 48px;
+    width: 80px;
+    border-radius: 35px;
+    cursor: pointer;
+
+}
+
+.pines {
+    position: absolute;
+    background: none;
+    color: white;
+    border: none;
+    font-weight: 600;
+    height: 48px;
+    font-size: small;
+    top: 17px;
+    left: 17px;
+    cursor: pointer;
+}
+
+.more-options {
+    position: absolute;
+    bottom: 17px;
+    right: 17px;
+
+}
+
+.more-options button {
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+
+}
+
+.more-options img {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: space-around;
+
+}
